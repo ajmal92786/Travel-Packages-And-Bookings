@@ -107,6 +107,6 @@ app.get("/bookings/:packageId", (req, res) => {
   } catch (error) {
     return res.status(500).json({ error: error.message });
   }
-}
+});
 
 module.exports = { app };
